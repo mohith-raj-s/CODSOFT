@@ -69,19 +69,20 @@ label_vs.place(x=175,y=40)
 label_computer.place(x=250,y=40)
 
 entry=Entry(x,highlightthickness=2,highlightbackground="black",highlightcolor="black",justify=CENTER)
-entry.place(x=130,y=100)
+entry.place(x=130,y=95)
+entry.insert(0,"Winner")
 
 label=Label(x,text="Choose your choice : Rock,Paper,Scissor")
-label.place(x=90,y=130)
+label.place(x=90,y=140)
 
 button_rock=Button(x,text="Rock",command=lambda:show("Rock"))
 button_paper=Button(x,text="Paper",command=lambda:show("Paper"))
 button_scissor=Button(x,text="Scissor",command=lambda:show("Scissor"))
 button_score=Button(x,text="Show Score",command=score,bg="#FFD700")
 
-button_rock.place(x=110,y=160)
-button_paper.place(x=170,y=160)
-button_scissor.place(x=230,y=160)
-button_score.place(x=155,y=200)
+button_rock.place(x=110,y=170)
+button_paper.place(x=170,y=170)
+button_scissor.place(x=230,y=170)
+button_score.place(x=155,y=210)
 
 x.mainloop()
